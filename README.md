@@ -29,6 +29,8 @@ Everything is standardized to Next JS with a few caveats:
 
 You can run `npx husky install` to install husky which should activate the pre-commit hook setup within `.husky/pre-commit`
 
+More info on husky [here](https://typicode.github.io/husky/#/)
+
 ## State
 
 In old Next, we were able to provide and automatically set global state using pageProps passed through the \_app.js file. In Next 13 we don't have that so the context has to be set at the top level client component per server route using the `useEffect` hook with the page's props.
