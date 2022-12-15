@@ -7,7 +7,7 @@
 First add a `.env.local` file to the root of the project with the following content:
 
 ```bash
-API_ENDPOINT_URL=http://localhost:3000
+NEXT_PUBLIC_API_ENDPOINT_URL=http://localhost:3000
 ```
 
 Then, run the development server:
@@ -36,3 +36,7 @@ More info on husky [here](https://typicode.github.io/husky/#/)
 ## State
 
 In old Next, we were able to provide and automatically set global state using pageProps passed through the \_app.js file. In Next 13 we don't have that so the context has to be set at the top level client component per server route using the `useEffect` hook with the page's props.
+
+## Deployment
+
+You should be able to import this repo into Vercel and have it deploy automatically. Also make sure you update the Vercel env variables with the ones in your `.env.local` file.
