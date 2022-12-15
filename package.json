@@ -1,0 +1,40 @@
+{
+  "name": "next-mui-context-bp",
+  "version": "0.1.0",
+  "private": true,
+  "author": "AtotheY",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.0",
+    "lodash": "^4.17.21",
+    "next": "^13.0.6",
+    "openai": "^3.1.0",
+    "prettier": "^2.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "swr": "^2.0.0",
+    "universal-cookie": "^4.0.4"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^13.0.4",
+    "@next/eslint-plugin-next": "^13.0.6",
+    "eslint": "^8.29.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "^13.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.8",
+    "husky": "^8.0.0"
+  }
+}

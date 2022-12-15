@@ -1,0 +1,59 @@
+{
+  "env": {
+    "browser": true,
+    "node": true    
+  },
+  "extends": ["airbnb", "plugin:prettier/recommended", "plugin:@next/next/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "no-undefined": 0,
+    "prettier/prettier": ["warn", { "endOfLine": "auto" }],
+    "no-case-declarations": 0,
+    "linebreak-style": 0,
+    "import/prefer-default-export": 0,
+    "no-use-before-define": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/no-unknown-property": 0,
+    "react/jsx-wrap-multilines": [
+      "error",
+      { "declaration": false, "assignment": false }
+    ],
+    "no-shadow": 0,
+    "import/no-named-as-default": 0,
+    "no-param-reassign": 0,
+    "no-unused-vars": "warn",
+    "no-promise-executor-return": 0,
+    "react/prop-types": 0,
+    "comma-dangle": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/no-unescaped-entities": 0,
+    "no-return-assign": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "react/no-array-index-key": 0,
+    "prefer-object-spread": 0,
+    "react/forbid-prop-types": 0,
+    "react/require-default-props": 0,
+    "no-console": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "."
+        ]
+      }
+    }
+  }
+}
