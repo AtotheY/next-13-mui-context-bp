@@ -39,4 +39,4 @@ In old Next, we were able to provide and automatically set global state using pa
 
 ## Deployment
 
-You should be able to import this repo into Vercel and have it deploy automatically. Also make sure you update the Vercel env variables with the ones in your `.env.local` file.
+You should be able to import this repo into Vercel and have it deploy automatically. Also make sure you update the Vercel env variables - for the `NEXT_PUBLIC_API_ENDPOINT_URL` make sure you change it from `localhost:3000` to whatever the production URL for your vercel instance is. For example, `https://next-mui-context-bp.vercel.app`
