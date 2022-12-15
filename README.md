@@ -27,7 +27,7 @@ Everything is standardized to Next JS with a few caveats:
 
 ## Pre commit hook
 
-You can run `git add .husky/pre-commit` to add the pre-commit lint to your project, also make sure you have Husky installed.
+You can run `npx husky install` to install husky which should activate the pre-commit hook setup within `.husky/pre-commit`
 
 ## State
 
