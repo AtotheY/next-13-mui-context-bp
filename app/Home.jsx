@@ -11,16 +11,16 @@ import styles from './home.styles';
 
 export default function HomePage() {
   const s = styles();
-  const { darkMode, toggleDarkMode } = useLocalContext();
+  const { theme, toggleTheme } = useLocalContext();
   return (
     <Box sx={m(s.container, s.flexColumnCenter)}>
       <IconButton
         onClick={() => {
-          toggleDarkMode();
+          toggleTheme();
         }}
         sx={s.iconContainer}
       >
-        {darkMode ? (
+        {theme === 'dark' ? (
           <LightModeIcon fontSize="large" />
         ) : (
           <NightsStayIcon fontSize="large" />

@@ -9,11 +9,8 @@ import { useLocalContext } from 'helpers/context';
 import { baseTheme, darkPalette, lightPalette } from 'styles/theme';
 
 export default function ThemeProvider({ children }) {
-  const { darkMode } = useLocalContext();
-  const palette = Object.assign(
-    baseTheme,
-    darkMode ? darkPalette : lightPalette
-  );
+  const { theme } = useLocalContext();
+  const palette = theme === 'dark' ? darkPalette : lightPalette;
   const currentTheme = createTheme({ ...baseTheme, palette });
 
   return (

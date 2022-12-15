@@ -17,6 +17,7 @@
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.0",
     "lodash": "^4.17.21",
+    "lodash.merge": "^4.6.2",
     "next": "^13.0.6",
     "openai": "^3.1.0",
     "prettier": "^2.8.1",

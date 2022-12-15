@@ -4,11 +4,12 @@ import ThemeProvider from './theme-provider';
 
 export default function RootLayout({ children }) {
   const nextCookies = cookies();
-  const theme = nextCookies.get('theme');
+  const cookieDarkMode = nextCookies.get('theme');
+
   return (
     <html lang="en">
       <body>
-        <ContextProvider theme={theme}>
+        <ContextProvider cookieTheme={cookieDarkMode?.value}>
           <ThemeProvider>{children}</ThemeProvider>
         </ContextProvider>
       </body>
