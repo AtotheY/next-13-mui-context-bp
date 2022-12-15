@@ -20,10 +20,14 @@ yarn dev
 
 Everything is standardized to Next JS with a few caveats:
 
-1. Styles are in the `styles` folder along with the MUI theme customizations for light and dark mode.
+1. Styles are in the `styles` folder along with the MUI theme customizations for light and dark mode. The current `theme` state is stored as a user cookie, defaulted to `dark`
 2. A services folder exist for abstracting away API calls.
 3. A `components` folder exists for all abstracted components.
 4. A `context` folder exists for the global react Context that is set in the first client component loaded after a page load.
+
+## Pre commit hook
+
+You can run `git add .husky/pre-commit` to add the pre-commit lint to your project, also make sure you have Husky installed.
 
 ## State
 
