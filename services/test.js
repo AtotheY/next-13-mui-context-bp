@@ -1,7 +1,5 @@
-import { apiUrl } from 'constants/api';
-
 export async function getTestData() {
-  const response = await fetch(`${apiUrl}/api/test`);
+  const response = await fetch(`/api/test`);
   if (!response.ok) {
     throw new Error('Failed to fetch test data');
   }

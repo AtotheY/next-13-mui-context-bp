@@ -4,13 +4,7 @@
 
 [Demo](https://next-mui-context-bp.vercel.app/)
 
-First add a `.env.local` file to the root of the project with the following content:
-
-```bash
-NEXT_PUBLIC_API_ENDPOINT_URL=http://localhost:3000
-```
-
-Then, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
